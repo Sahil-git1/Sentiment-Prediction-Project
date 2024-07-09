@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Space Explorer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sentiment Space Explorer</h1>
+    </header>
+    <div class="toggle-container">
+        <label class="toggle-label">
+            <input type="checkbox" id="theme-toggle">
+            <span class="toggle-button"></span>
+        </label>
+    </div>
+    <main>
+        <section>
+            <h2>Text Input</h2>
+            <textarea id="text-input" rows="4" placeholder="Enter your text here..."></textarea>
+            <button onclick="submitText()">Submit Text</button>
+        </section>
+        <section>
+            <h2>Image Upload</h2>
+            <input type="file" id="image-upload" accept="image/*" onchange="previewImage()">
+            <img id="image-preview" style="display:none;">
+            <button onclick="submitImage()">Submit Image</button>
+        </section>
+        <section id="output-section">
+            <h2>Output</h2>
+            <div id="output"></div>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

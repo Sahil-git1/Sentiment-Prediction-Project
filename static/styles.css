@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* Light mode background */
+    color: #333333; /* Dark mode text color */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInDown 2s;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    animation: pulse 2s infinite;
+    color: #6200ea; /* Heading color */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    animation: fadeIn 2s;
+}
+
+section {
+    margin-bottom: 30px;
+    width: 80%;
+    animation: fadeInUp 2s;
+    background-color: #ffffff; /* Section background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+textarea, input[type="file"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    background-color: #f0f0f0; /* Light mode input background */
+    color: #333333; /* Dark mode input text color */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #6200ea; /* Button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3; /* Button hover background */
+}
+
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-label input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle-button:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .toggle-button {
+    background-color: #6200ea; /* Toggle button background */
+}
+
+input:checked + .toggle-button:before {
+    transform: translateX(26px);
+}
+
+.dark-mode {
+    background-color: #1e1e1e; /* Dark mode background */
+    color: #ffffff; /* Dark mode text color */
+}
+
+#output-section {
+    background-color: #ffffff; /* Output section background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 20px;
+    animation: fadeIn 2s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+#output {
+    font-size: 1.2em;
+    color: #333333; /* Output text color */
+    animation: fadeInUp 2s;
+}
+
+#image-preview {
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 10px;
+    animation: fadeIn 2s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: transform 0.5s ease-in-out;
+}
+
+#image-preview:hover {
+    transform: scale(0.95); /* Image hover effect */
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

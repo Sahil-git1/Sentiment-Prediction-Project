@@ -23,7 +23,7 @@ Welcome to the Sentiment Prediction System! This powerful tool uses advanced nat
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/sentiment-prediction-system.git
+   git clone https://github.com/Sahil-git1/Sentiment-prediction-project.git
    ```
 2. Install dependencies:
    ```
@@ -58,20 +58,4 @@ We welcome contributions from the community! If you'd like to contribute, please
 
 For major changes, please open an issue first to discuss what you would like to change.
 
-## 📄 License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## 📧 Contact
-
-If you have any questions or suggestions, please feel free to reach out to us at [support@sentimentprediction.com](mailto:support@sentimentprediction.com).
-
----
-
-<div align="center">
-
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/your-username/sentiment-prediction-system)
-[![GitHub stars](https://img.shields.io/github/stars/your-username/sentiment-prediction-system.svg?style=social&label=Star)](https://github.com/your-username/sentiment-prediction-system)
-[![Follow](https://img.shields.io/twitter/follow/your_twitter_handle.svg?style=social&label=Follow)](https://twitter.com/your_twitter_handle)
-
-</div>
